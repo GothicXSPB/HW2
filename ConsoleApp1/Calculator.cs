@@ -248,9 +248,8 @@
                     x += temp;
                     x *= 10;
                 }
-                x /= 10;
             }
-            return x;
+            return x/10;
         }
 
         //9.Метод получает на вход 2 числа. Сообщите, есть ли в написании двух чисел одинаковые цифры. Например, для пары 123 и 345, ответом будет являться true, а, для пары 500 и 999 - false.
@@ -279,6 +278,18 @@
                 a /= 10;
             }
             return false;
+        }
+
+        public static int ReadDigital()
+        {
+            string a = Console.ReadLine();
+            int digital = Convert.ToInt32(a);
+            return digital;
+        }
+
+        public static void WriteRes(int digital)
+        {
+            Console.WriteLine(digital);
         }
     }
 }
